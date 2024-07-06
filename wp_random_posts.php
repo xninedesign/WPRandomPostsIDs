@@ -9,7 +9,7 @@
 * Description:
 * $post_type - (string) Specify what type of posts you want to draw an IDs from
 * $termid - (int) The term ID used to filter posts by taxonomy terms
-* $multiplier - (int) A multiplier to increase the number of posts queried to ensure randomness.
+* $multiplier - (int) A multiplier to control the number of posts queried.
 * $numberids - (int) The number of post IDs to return
 * $issticked - (boolean) A boolean indicating whether to include sticky posts.
 *
