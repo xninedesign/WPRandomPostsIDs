@@ -34,18 +34,17 @@ function random_postsids( $post_type = "post" , $termid, $multiplier = 2, $numbe
 			$topicq = '';
 			
 			if ( $issticked == true ) $sticky = get_option( 'sticky_posts' );
-			else 
-				$sticky = array();				
+			else $sticky = array();				
 			
 		} else {
 			
 			$cat = '';
 			$topicq = array ( array(
-						'taxonomy' => 'bsnewscat',
-						'field' => 'term_taxonomy_id',
-						'terms' => $termid,
-						)
-					);
+				'taxonomy' => 'bsnewscat',
+				'field' => 'term_taxonomy_id',
+				'terms' => $termid,
+				)
+			);
 			$sticky = array();
 			
 		}
@@ -56,10 +55,10 @@ function random_postsids( $post_type = "post" , $termid, $multiplier = 2, $numbe
 		'post_type' 		=> $post_type,
 		'post_status' 		=> 'publish',
 		'numberposts' 		=> $numberids * $multiplier,
-		'tax_query' 			=> $topicq,
-		'cat' 					=> $cat,
-		'fields' 			=> 'ids',
-		'post__in' 			=> $sticky,
+		'tax_query' 		=> $topicq,
+		'cat' 			=> $cat,
+		'fields' 		=> 'ids',
+		'post__in' 		=> $sticky,
 		'no_found_rows' 	=> true
 	);
 	
