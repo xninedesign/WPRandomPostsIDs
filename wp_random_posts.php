@@ -2,7 +2,7 @@
 /**
 * @author xninedesign.pro
 * @copyright (c) 2023 xninedesign.pro
-* @description A Wordpress function to get random posts ID's.
+* @description A Wordpress function to get random posts ID's. 
 * @version 1.0
 * @license http://creativecommons.org/licenses/by/3.0/ Creative Commons 3.0
 * 
